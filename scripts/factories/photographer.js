@@ -1,10 +1,5 @@
 
 function photographerFactory(name, price, tagline, city, country, id, portrait) {
-
-    function openProfil() {
-        window.open(`photographer.html?id=${id}`);
-      }    
-
       const picture = `assets/photographers/${portrait}`;
   
       function openProfil() {
@@ -43,3 +38,4 @@ function photographerFactory(name, price, tagline, city, country, id, portrait) 
 
     return { name, picture, location, tagline, price, getUserCardDOM}
 }
+
