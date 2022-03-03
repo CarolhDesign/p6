@@ -4,7 +4,7 @@
         //récupérer les données dans une fonction spéciale ' displayData'.
         fetch('scripts/utils/photographers.json')
         .then(response => response.json())
-        .then(photographers => photographers = displayData(photographers.photographers))
+        .then(photographers => displayData(photographers.photographers))
     }
 
     async function displayData(photographers) {
